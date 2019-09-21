@@ -1,5 +1,10 @@
+import random
+
 number = input("Θα δοκιμάσουμε την προπαίδεια του; ")
-for n in range(10):
+factors = list(range(10))
+random.shuffle(factors)
+
+for n in factors:
     wrong = True
     while wrong:
         question = f"{n} x {number} = "
